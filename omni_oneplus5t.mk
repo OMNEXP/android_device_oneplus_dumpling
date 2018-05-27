@@ -33,6 +33,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 TARGET_BOOTANIMATION_SIZE := 1080p
 ROM_BUILDTYPE := OFFICIAL
 
+# String Clang
+KBUILD_COMPILER_STRING=Clang-2018-5
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
